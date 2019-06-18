@@ -15,9 +15,6 @@ a.largeHover:hover {
   height: 100%;
   width: 200px; 
   position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
   background-color: blue; 
   padding-top: 20px; 
 }
@@ -81,21 +78,38 @@ body, html {
     height: 100%;
 }
 
-/* The hero image */
-.hero-image {
+/* Loading Page */
+.loadImg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/header1.jpg");
-  height: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.hero-text {
+.loadText {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.loadBtn {
+  background-color: #0077B5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.65;
+}
+
+/* Get rid of underline */
+a {
+text-decoration: none;
 }
